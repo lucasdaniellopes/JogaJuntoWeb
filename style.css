@@ -1,12 +1,105 @@
-.container{
-    width: 90%;
-    height: 100vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+input {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  margin: 0 auto;
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.container .container-form{
-    display: flex;
-    flex-direction: column;
+.container .container-form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .container-form form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-form__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.container-form__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container-form__rememberForget {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.container-form__rememberForget__checkInput {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container-form__rememberForget > a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-left: 25px;
+}
+
+.container .container-form button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background-color: #6f7302;
+  color: #fff;
+  height: 50px;
+}
+
+.container .container-form button a {
+  font-size: 15px;
+  color: #fff;
+}
+
+.container-fastLogin {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.container-fastLogin__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container-fastLogin__header__text {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.container-fastLogin__header .container-fastLogin__header__line p {
+  display: inline-block;
+  color: #a0a237;
+  text-align: center;
+}
+
+.container-fastLogin__social {
+  margin-top: 30px;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
 }
