@@ -3,7 +3,7 @@ input {
 }
 .container {
   border-radius: 15px;
-  background: url(./assets/background\ football.svg);
+  background: url(../../assets/background\ football.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -61,32 +61,8 @@ input {
   color: #222601;
 }
 
-.container-form__rememberForget {
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  font-size: 12px;
-  margin-top: 10px;
-  margin-bottom: 60px;
-}
-
-.container-form__rememberForget__checkInput {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  color: #fff;
-}
-.container-form__rememberForget > a {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  color: #fff;
-  border-bottom: 2px solid #a0a237;
-
-  margin-left: 25px;
-}
-
 .container .container-form button {
+  margin-top: 50px;
   border-radius: 8px;
   border: 1px solid transparent;
   background-color: #6f7302;
@@ -118,13 +94,13 @@ input {
   justify-content: space-between;
 }
 .container-fastLogin__header__text {
-  min-width: 90px;
+  min-width: 140px;
   font-size: 15px;
   font-weight: bold;
 }
 
 .container-fastLogin__header .container-fastLogin__header__line p {
-  font-size: 1.25rem;
+  font-size: 1rem;
   display: inline-block;
   color: #a0a237;
   text-align: center;
@@ -144,14 +120,6 @@ input {
 
 .container-fastLogin__social__apple img {
   width: 100%;
-}
-
-.container-fastLogin__register a {
-  font-size: 14px;
-  font-weight: 600;
-  color: #fff;
-  cursor: pointer;
-  border-bottom: 2px solid #a0a237;
 }
 
 .container-fastLogin__social__app {

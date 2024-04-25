@@ -1,0 +1,128 @@
+input {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  max-width: 500px;
+  border-radius: 15px;
+  background-color: #edf0f3;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 30px auto;
+  width: 90%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .container-form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .container-form form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-form__text {
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 28px;
+}
+.container-form__photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  height: 150px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 15px;
+}
+
+.container-form__photos span {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.container-form__photos p {
+  margin-top: 5px;
+  font-size: 10px;
+  font-weight: 400;
+  color: #8f8f8f;
+}
+
+.container-form__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.container-form__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-form__inputs__adress {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 23px;
+}
+
+.container-form__inputs__adress input {
+  width: 135px;
+  margin: 0;
+  padding: 0;
+  align-items: flex-start;
+  align-self: flex-start;
+}
+
+.container-form__inputs input {
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 8px;
+  padding-left: 5px;
+  color: #222601;
+  border: 1px solid transparent;
+  height: 50px;
+  outline-color: #6f7302;
+  text-shadow: 4px 8px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px 0px inset;
+}
+
+.container-form__inputs input::placeholder {
+  color: #222601;
+}
+
+.container .container-form button {
+  margin-top: 50px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background-color: #f8a919;
+  color: #fff;
+  height: 50px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px inset,
+    rgba(0, 0, 0, 0.1) 0px 4px 6px -4px;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.container .container-form button a {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 300;
+}
