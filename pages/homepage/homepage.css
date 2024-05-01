@@ -1,3 +1,6 @@
+body {
+  background-color: #edf0f3;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -71,7 +74,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 15px;
   overflow: hidden;
   overflow-x: scroll;
 }
@@ -82,12 +85,68 @@
   align-items: center;
   border-radius: 50%;
   background-color: #fff;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
 }
 
 .container-categoryBar > ul li:first-child {
   font-size: 11px;
   background-color: #222601;
   color: #fff;
+}
+
+.container-arenas {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container-arenas__header {
+  display: flex;
+
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  gap: 5px;
+}
+
+.container-arenas__header__searchIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+}
+
+.container-arenas .container-title {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.container-arenas__arenasList {
+  display: flex;
+  width: 150%;
+  overflow: scroll;
+  gap: 15px;
+  margin-top: 4px;
+}
+
+.container-arenas__arenasList__arena {
+  border-radius: 8px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 110px;
+}
+
+.container-arenas__arenasList__arena:first-child {
+  background-color: #f8a919;
+}
+
+.container-arenas__arenasList__arena:nth-child(2) {
+  background-color: #004c8f;
 }
