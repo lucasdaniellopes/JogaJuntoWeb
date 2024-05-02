@@ -110,7 +110,8 @@ body {
   gap: 5px;
 }
 
-.container-arenas__header__searchIcon {
+.container-arenas__header__searchIcon,
+.workouts-header__searchIcon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,17 +121,20 @@ body {
   border-radius: 50%;
 }
 
-.container-arenas .container-title {
+.container-arenas .container-title,
+.container-title {
   font-weight: 800;
   font-size: 18px;
 }
 
 .container-arenas__arenasList {
   display: flex;
-  width: 150%;
-  overflow: scroll;
+  width: 100%;
+  max-width: 400px;
   gap: 15px;
   margin-top: 4px;
+  margin-bottom: 20px;
+  overflow-x: auto;
 }
 
 .container-arenas__arenasList__arena {
@@ -139,7 +143,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 300px;
+  min-width: 260px;
   height: 110px;
 }
 
@@ -149,4 +153,81 @@ body {
 
 .container-arenas__arenasList__arena:nth-child(2) {
   background-color: #004c8f;
+}
+
+.workouts {
+  width: 90%;
+  height: 100%;
+}
+
+.workouts-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.workouts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 10px 10px 0 10px;
+  margin-top: 5px;
+}
+.workouts-list .workout {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100px;
+}
+.workouts-list .workout .workout-text {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #222601;
+  font-weight: 600;
+}
+
+.workouts-list .workout .workout-text span {
+  background-color: #edf0f3;
+  padding: 5px 10px;
+  border-radius: 25px;
+}
+
+.workouts-list .workout .workout-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.workouts-list .workout .workout-data p {
+  color: #222601;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.workouts-list .workout .workout-data span {
+  color: #6f7302;
+  font-weight: 500;
+}
+
+.workout-arena {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.workouts-list .workout .workout-arena__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.workouts-list .workout .workout-arena__img img {
+  width: 100%;
+  object-fit: cover;
 }
