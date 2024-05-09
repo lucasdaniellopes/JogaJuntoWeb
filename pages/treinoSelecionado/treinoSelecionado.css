@@ -4,7 +4,7 @@ input {
 
 body {
   background-color: #edf0f3;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .container header {
@@ -84,20 +84,6 @@ body {
   font-weight: 700;
 }
 
-.container-arenas {
-  margin: 15px auto 0 auto;
-  border-radius: 8px;
-  border: 1px solid #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 90%;
-  height: 160px;
-  background-color: #f8a919;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
-
 .workouts {
   width: 90%;
 }
@@ -120,12 +106,16 @@ body {
   overflow: hidden;
   overflow-y: auto;
 }
-.workouts-list .workout {
+.workout {
   display: flex;
   justify-content: space-between;
   min-height: 100px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0 10px;
+  border: 3px solid #d9d9d9;
 }
-.workouts-list .workout .workout-text {
+.workout .workout-text {
   width: 120px;
   display: flex;
   flex-direction: column;
@@ -136,26 +126,26 @@ body {
   font-weight: 600;
 }
 
-.workouts-list .workout .workout-text span {
+.workout .workout-text span {
   background-color: #edf0f3;
   padding: 5px 10px;
   border-radius: 25px;
 }
 
-.workouts-list .workout .workout-data {
+.workout .workout-data {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 15px;
 }
-.workouts-list .workout .workout-data p {
+.workout .workout-data p {
   color: #222601;
   font-size: 20px;
   font-weight: 600;
 }
 
-.workouts-list .workout .workout-data span {
+.workout .workout-data span {
   color: #6f7302;
   font-weight: 500;
 }
@@ -165,14 +155,14 @@ body {
   justify-content: center;
   align-items: center;
 }
-.workouts-list .workout .workout-arena__img {
+.workout .workout-arena__img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   overflow: hidden;
 }
 
-.workouts-list .workout .workout-arena__img img {
+.workout .workout-arena__img img {
   width: 100%;
   object-fit: cover;
 }
@@ -180,10 +170,85 @@ body {
 .registerBtn {
   font-size: 24px;
   font-weight: 800;
-  width: 85%;
+  width: 100%;
   background-color: #d9d9d9;
   border-radius: 15px;
   border: 1px solid transparent;
   min-height: 60px;
   margin-top: 50px;
+}
+form {
+  width: 90%;
+}
+
+.playersList {
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #d9d9d9;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 1px solid transparent;
+}
+
+.playersList::placeholder {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.playersList::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #333;
+}
+
+option {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+option:hover {
+  background-color: #9747ff;
+}
+
+option:active {
+  background-color: #9747ff;
+}
+
+label {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.container form .workoutInput {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input {
+  font-size: 18px;
+  height: 35px;
+  border-radius: 8px;
+  border: 2px solid #d9d9d9;
+  background-color: #fff;
+}
+
+form span {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: gray;
 }
