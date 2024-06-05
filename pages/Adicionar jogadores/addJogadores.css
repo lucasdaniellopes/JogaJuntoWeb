@@ -1,12 +1,10 @@
 input {
   font-family: "Roboto", sans-serif;
 }
-
 body {
   background-color: #edf0f3;
   overflow: auto;
 }
-
 .container header {
   width: 100%;
 }
@@ -25,11 +23,9 @@ body {
   align-items: center;
   flex-direction: column;
 }
-
 .content {
   width: 100%;
 }
-
 .container-text {
   display: flex;
   justify-content: center;
@@ -48,46 +44,38 @@ body {
   border: 1px solid #000;
   border-radius: 15px;
 }
-
 .container-form__photos span {
   font-size: 16px;
   font-weight: 900;
 }
-
 .container-form__photos p {
   margin-top: 5px;
   font-size: 10px;
   font-weight: 400;
   color: #8f8f8f;
 }
-
 .back-btn {
   display: flex;
   justify-content: flex-end;
   width: 100%;
 }
-
 .back-btn img {
   background-color: #d9d9d9;
   border-radius: 50%;
   padding: 5px;
 }
-
 .container-text {
   margin-top: 15px;
 }
-
 .workous-header__title {
   margin-top: 30px;
   margin-bottom: 20px;
   font-size: 20px;
   font-weight: 700;
 }
-
 .workouts {
   width: 90%;
 }
-
 .workouts-header {
   display: flex;
   align-items: center;
@@ -127,13 +115,11 @@ body {
   color: #222601;
   font-weight: 600;
 }
-
 .workout .workout-text span {
   background-color: #edf0f3;
   padding: 5px 10px;
   border-radius: 25px;
 }
-
 .workout .workout-data {
   display: flex;
   flex-direction: column;
@@ -146,13 +132,11 @@ body {
   font-size: 20px;
   font-weight: 600;
 }
-
 .workout .workout-data span {
   color: #6f7302;
   font-weight: 500;
   font-size: 12px;
 }
-
 .workout-arena {
   display: flex;
   justify-content: center;
@@ -164,12 +148,10 @@ body {
   border-radius: 50%;
   overflow: hidden;
 }
-
 .workout .workout-arena__img img {
   width: 100%;
   object-fit: cover;
 }
-
 .registerBtn {
   font-size: 24px;
   font-weight: 800;
@@ -183,7 +165,6 @@ body {
 form {
   width: 90%;
 }
-
 .playersList {
   font-size: 18px;
   font-weight: 700;
@@ -194,12 +175,10 @@ form {
   margin-top: 20px;
   border: 1px solid transparent;
 }
-
 .playersList::placeholder {
   font-size: 18px;
   font-weight: 700;
 }
-
 .playersList::after {
   content: "";
   position: absolute;
@@ -212,32 +191,26 @@ form {
   border-right: 5px solid transparent;
   border-top: 5px solid #333;
 }
-
 option {
   width: 100%;
   font-size: 18px;
   font-weight: 700;
 }
-
 option:hover {
   background-color: #9747ff;
 }
-
 option:active {
   background-color: #9747ff;
 }
-
 label {
   font-size: 15px;
   font-weight: 700;
 }
-
 .container form .workoutInput {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-
 form input {
   font-size: 18px;
   height: 35px;
@@ -245,7 +218,6 @@ form input {
   border: 2px solid #d9d9d9;
   background-color: #fff;
 }
-
 form span {
   margin-top: 10px;
   display: flex;
@@ -255,21 +227,17 @@ form span {
   font-weight: 700;
   color: gray;
 }
-
 .workout .workout-content {
   display: flex;
   gap: 10px;
 }
-
 .workout h3 {
   font-size: 18px;
   font-weight: 600;
 }
-
 .workout-btns {
   align-self: flex-end;
 }
-
 .workout-btns a {
   padding: 5px 20px;
   background-color: #edf0f3;
@@ -279,73 +247,60 @@ form span {
   font-size: 12px;
   border-radius: 16px;
 }
-
 .playersDiv {
   display: flex;
 }
-
 .playersDiv-addIcon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .playersDiv-addIcon span {
   color: #000;
   font-size: 16px;
   margin-top: 30px;
   align-self: flex-start;
 }
-
 .playersDiv-addIcon img {
   align-self: center;
 }
-
 .requests {
   width: 90%;
   margin: 20px auto;
 }
-
 .requests h3 {
   font-size: 20px;
   font-weight: 800;
 }
-
 .requests-box {
   border: 2px solid #000;
   border-radius: 8px;
   background-color: #fff;
 }
-
 .request-icon {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 30px;
 }
-
 .requests-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 0 20px;
 }
-
 .request {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .request-text p {
   font-weight: 500;
 }
-
 .request-text span {
   font-weight: 300;
   font-size: 10px;
 }
-
 .request-btns {
   display: flex;
   flex-direction: column;
@@ -357,7 +312,6 @@ form span {
   border: 1px solid transparent;
   border-radius: 4px;
 }
-
 .request-btns :nth-child(2) {
   background-color: #000;
   color: #fff;
