@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adicionar jogadores JogaJunto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./addJogadores.css" />
+    <link rel="stylesheet" href="../../reset.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="workouts">
+        <div class="workout">
+          <h3>Marcado</h3>
+          <div class="workout-content">
+            <div class="workout-text">
+              <span>Futsal</span>
+              <span>Iniciante</span>
+            </div>
+            <div class="workout-data">
+              <p>28/04</p>
+              <span>21:00 - 00:00</span>
+            </div>
+            <div class="workout-arena">
+              <div class="workout-arena__img">
+                <img src="../../assets/areno sol.svg" alt="arena" />
+              </div>
+            </div>
+          </div>
+          <div class="workout-btns">
+            <a href="../../index.html">Voltar</a>
+            <a href="">Salvar</a>
+          </div>
+        </div>
+      </section>
+
+      <form>
+        <div class="playersDiv">
+          <label for="players"></label>
+          <select name="players" id="players" class="playersList">
+            <option value="" disabled selected class="selectPlaceholder">
+              Participantes
+            </option>
+            <option value="player1ID">Lucas</option>
+            <option value="player1ID">Rike</option>
+            <option value="player1ID">Gregorio</option>
+            <option value="player1ID">Keila</option>
+          </select>
+
+          <div class="playersDiv-addIcon">
+            <img src="../../assets/addplayericon.svg" alt="" />
+            <span>+</span>
+          </div>
+        </div>
+
+        <div class="workoutInput">
+          <label for="valorInput">Valor:</label>
+          <input
+            type="text"
+            name="valorInput"
+            id="valorInput"
+            disabled
+            placeholder="R$ 15,00"
+          />
+
+          <div class="workoutInput">
+            <label for="playersInput">Vagas preenchidas:</label>
+            <input
+              type="text"
+              name="playersInput"
+              id="playersInput"
+              disabled
+              placeholder="04/16"
+            />
+          </div>
+
+          <div class="workoutInput">
+            <label for="campInput">Quadra:</label>
+            <input
+              type="text"
+              name="campInput"
+              id="valorInput"
+              disabled
+              placeholder="Quadra de volei X"
+            />
+          </div>
+          <div class="workoutInput">
+            <label for="durationInput">Duração:</label>
+            <input
+              type="text"
+              name="durationInput"
+              id="durationInput"
+              disabled
+              placeholder="3 Horas"
+            />
+          </div>
+        </div>
+      </form>
+      <section class="requests">
+        <h3>Solicitações</h3>
+        <div class="requests-box">
+          <ul class="requests-list">
+            <li class="request">
+              <div class="request-icon">
+                <img src="../../assets/addplayericon.svg" alt="" />
+              </div>
+              <div class="request-text">
+                <p>@miguel_soares</p>
+                <span>Nível: iniciante, 10 jogos no JJ</span>
+              </div>
+              <div class="request-btns">
+                <button>Confirmar</button>
+                <button>Excluir</button>
+              </div>
+            </li>
+            <li class="request">
+              <div class="request-icon">
+                <img src="../../assets/addplayericon.svg" alt="" />
+              </div>
+              <div class="request-text">
+                <p>@lucasmedeiros</p>
+                <span>Nível: iniciante, 4 jogos no JJ</span>
+              </div>
+              <div class="request-btns">
+                <button>Confirmar</button>
+                <button>Excluir</button>
+              </div>
+            </li>
+            <li class="request">
+              <div class="request-icon">
+                <img src="../../assets/addplayericon.svg" alt="" />
+              </div>
+              <div class="request-text">
+                <p>@ricardo_estevão</p>
+                <span>Nível: intermediario, 23 jogos no JJ</span>
+              </div>
+              <div class="request-btns">
+                <button>Confirmar</button>
+                <button>Excluir</button>
+              </div>
+            </li>
+            <li class="request">
+              <div class="request-icon">
+                <img src="../../assets/addplayericon.svg" alt="" />
+              </div>
+              <div class="request-text">
+                <p>@pauloSoares</p>
+                <span>Nível: iniciante, 6 jogos no JJ</span>
+              </div>
+              <div class="request-btns">
+                <button>Confirmar</button>
+                <button>Excluir</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
